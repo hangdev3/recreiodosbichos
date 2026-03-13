@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Nunito:wght@400;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Nunito", "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-primary: #0A1931; /* Deep Navy Blue */
+  --color-secondary: #1C54A8; /* Brand Blue */
+  --color-accent: #70C14A; /* Brand Green */
+  --color-accent-hover: #5DAA38;
+  --color-surface: #F8FAFC;
+  --color-ink: #1E293B;
+}
+
+@utility no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-surface);
+  color: var(--color-ink);
+}
